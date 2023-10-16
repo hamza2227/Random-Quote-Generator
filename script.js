@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = () => {
 
     getRandomQuote();
 
@@ -11,7 +11,7 @@ function getRandomQuote() {
     quote_btn.onclick = () => {
 
         var randomQuoteArray = [
-            "Your attitude determines your direction.",
+
             "Dream big, work hard, stay focused, and surround yourself with good people.",
             "The only way to achieve the impossible is to believe it is possible.",
             "Your life does not get better by chance, it gets better by change.",
@@ -28,13 +28,34 @@ function getRandomQuote() {
             "The only way to do great work is to love what you do.",
             "Believe you can and you're halfway there.",
             "Life is 10% what happens to us and 90% how we react to it.",
+            "Every morning brings new potential, but only if you make the most of it.",
+            "Success is not just a destination; it's a journey of continuous effort.",
+            "Embrace the challenges of today, they will become the strength you need for tomorrow.",
+            "In the middle of difficulty lies opportunity.",
+            "Your dreams don't work unless you do.",
+            "The best way to predict your future is to create it.",
+            "The only limit to our realization of tomorrow will be our doubts of today.",
+            "Life is a journey that must be traveled no matter how bad the roads and accommodations.",
+            "Hard work beats talent when talent doesn't work hard.",
+            "Believe in the magic of new beginnings.",
+            "The only thing standing between you and your goal is the story you keep telling yourself.",
+            "Every accomplishment starts with the decision to try.",
+            "Your attitude determines your direction.",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "Your life is your story, write well, edit often.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "Every day may not be good, but there's something good in every day.",
+            "Be a voice, not an echo.",
+            "The harder you work for something, the greater you'll feel when you achieve it.",
+            "Difficulties in life are intended to make us better, not bitter.",
+
         ]
 
         var random_quote = document.getElementById("random_quote");
 
-        var rand = Math.floor(Math.random()*16);
+        var rand = Math.floor(Math.random() * 37);
 
-        random_quote.textContent = "\""+randomQuoteArray[rand]+"\""; 
+        random_quote.textContent = "\"" + randomQuoteArray[rand] + "\"";
 
     }
 
